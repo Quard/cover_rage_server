@@ -1,0 +1,14 @@
+machine:
+  python:
+    version: 3.5.1
+  environment:
+    RAGE_SRV_HOST: example.com
+
+dependencies:
+  override:
+    - pip install --upgrade -r test_requirements.txt
+
+test:
+  override:
+    - mkdir $CIRCLE_TEST_REPORTS/junit
+    - nosetests --cover-package=cover_rage_server --with-coverage --cover-xml --with-xunit --xunit-testsuite-name=nosetests --xunit-file=$CIRCLE_TEST_REPORTS/junit/test-results.xml

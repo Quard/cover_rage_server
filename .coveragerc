@@ -1,0 +1,18 @@
+[run]
+omit =
+    *tests*
+    /usr/*
+    */virtualenvs/*
+    */env/*
+    cover_rage_server/secrets.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __unicode__
+    def __repr__
+    def __str__
+    raise NotImplementedError
+    assert
+
+show_missing = True

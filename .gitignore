@@ -1,0 +1,44 @@
+# OS
+*~
+.DS_Store
+
+# Common IDEs
+*.swp
+.idea/
+.buildpath
+.project
+atlassian-ide-plugin.xml
+*.ipynb
+
+# Python
+*.pyc
+*.pyo
+*__pycache__*
+
+Virtaul env
+env/*
+
+# Logs
+/logs/*
+
+# Build
+build/
+dist/
+*.egg-info
+
+# Default environment settings
+.env/environment
+
+# Coverage
+html_coverage/
+.coverage
+coverage.xml
+
+# Nose tests
+nosetests.xml
+
+# Developer's Makefile
+makefile-local
+
+# Configuration
+cover_rage_server/.env/environment

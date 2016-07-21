@@ -1,0 +1,5 @@
+aiohttp==0.22.4
+aioredis==0.2.8
+envparse==0.2.0
+gunicorn==19.6.0
+trafaret==0.7.1
